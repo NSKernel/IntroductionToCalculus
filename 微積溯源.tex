@@ -25,6 +25,11 @@
 	\let\CJKsymbol\CJKmovesymbol
 	\let\CJKpunctsymbol\CJKsymbol}
 
+\newcommand*\CJKmovesymbolback[1]{\hbox{#1}}
+\newcommand*\CJKmoveback{\punctstyle{plain}
+    \let\CJKsymbol\CJKmovesymbolback
+    \let\CJKpunctsymbol\CJKsymbol}
+
 % landscape
 \usepackage{atbegshi}
 \AtBeginShipout{
@@ -35,7 +40,7 @@
 }
 
 % font
-\defaultCJKfontfeatures{RawFeature={vertical:+vert}}
+%\defaultCJKfontfeatures{RawFeature={vertical:+vert}}
 \makeatletter
 \newcommand*{\shifttext}[2]{
   \settowidth{\@tempdima}{#2}
@@ -56,7 +61,8 @@
 
 
 %% font settings
-\setCJKmainfont[BoldFont=SourceHanSerifSC-Bold.otf,ItalicFont=FZKai-Z03.TTF]{SourceHanSerifSC-Medium.otf}
+\setCJKmainfont[RawFeature={vertical;+vert},BoldFont=SourceHanSerifSC-Bold.otf,ItalicFont=FZKai-Z03.TTF]{SourceHanSerifSC-Medium.otf}
+\newCJKfontfamily{\equa}{FZKai-Z03.TTF}
 \setCJKsansfont{FZKai-Z03}
 \setCJKmonofont{FZKai-Z03}
 

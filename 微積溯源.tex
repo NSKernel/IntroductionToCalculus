@@ -1,0 +1,160 @@
+%!TEX program = xelatex
+%!TEX encoding = UTF-8
+
+\documentclass[UTF8, nofont, landscape, a5paper]{ctexbook}
+
+\usepackage{ctex}
+\usepackage{xeCJK}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx,stackengine,scalerel}
+\def\tang{\ThisStyle{\abovebaseline[0pt]{\scalebox{-1}{$\SavedStyle\perp$}}}}
+\usepackage{amsthm}
+\usepackage{ulem}
+\usepackage{indentfirst}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+% Chinese numbering
+\AddEnumerateCounter{\chinese}{\chinese}{}
+
+\newcommand*\CJKmovesymbol[1]{\raise.35em\hbox{#1}}
+\newcommand*\CJKmove{\punctstyle{plain}% do not modify the spacing between punctuations
+	\let\CJKsymbol\CJKmovesymbol
+	\let\CJKpunctsymbol\CJKsymbol}
+
+% landscape
+\usepackage{atbegshi}
+\AtBeginShipout{
+  \global\setbox\AtBeginShipoutBox\vbox{
+    \special{pdf: put @thispage <</Rotate 90>>}
+    \box\AtBeginShipoutBox
+  }
+}
+
+% font
+\defaultCJKfontfeatures{RawFeature={vertical:+vert}}
+\makeatletter
+\newcommand*{\shifttext}[2]{
+  \settowidth{\@tempdima}{#2}
+  \makebox[\@tempdima]{\hspace*{#1}#2}
+}
+\makeatother
+\newcommand\ytza[1]{\shifttext{-3.5pt}{\ytzfz #1}}
+
+% underline
+%\renewcommand{\ULdepth}{7pt}
+\renewcommand*{\uwave}{%
+	\bgroup
+	\markoverwith{%
+		\lower5pt\hbox{\sixly\char58}%
+	}%
+	\ULon
+}
+
+
+%% font settings
+\setCJKmainfont[BoldFont=SourceHanSerifSC-Bold.otf,ItalicFont=FZKai-Z03.TTF]{SourceHanSerifSC-Medium.otf}
+\setCJKsansfont{FZKai-Z03}
+\setCJKmonofont{FZKai-Z03}
+
+\renewcommand{\thepage}{\Chinese{page}}
+
+\usepackage{geometry}
+\newgeometry{
+  top=65pt, bottom=65pt, left=60pt, right=60pt,
+  headsep=7pt, footskip=18pt
+}
+\savegeometry{mdGeo}
+\loadgeometry{mdGeo}
+
+
+\newcommand{\pageCN}{第\thepage 页}
+
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{
+    \fancyhf{}
+%    \fancyhead[LE]{\quad\quad\quad\quad\small{\ziju{0.3}\leftmark}}
+%    \fancyhead[RE]{\small\thepage\quad\quad\quad\quad\quad\quad}
+%    \fancyfoot[LO]{\quad\quad\quad\quad\small{\ziju{0.3}\rightmark}}
+%    \fancyfoot[RO]{\small\thepage\quad\quad\quad\quad\quad\quad\quad\quad}
+    \renewcommand{\headrulewidth}{0bp}
+}
+\fancypagestyle{empty}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0bp}
+}
+
+% titles
+\titleformat{\chapter}{}{}{0pt}{\raggedright\bfseries\LARGE\ziju{0.4}}
+\titlespacing*{\chapter}{10pt}{0pt}{10pt}
+\titleformat{\section}{}{}{0pt}{\raggedright\bfseries\Large\ziju{0.4}\hspace*{23pt}}
+\titlespacing*{\section}{0pt}{8pt}{18pt}
+
+% headers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\quad\quad\quad\quad\small{\ziju{0.3}\leftmark}}
+\fancyhead[RE]{\small\thepage\quad\quad\quad\quad\quad\quad}
+\fancyfoot[LO]{\quad\quad\quad\quad\small{\ziju{0.3}\rightmark}}
+\fancyfoot[RO]{\small\thepage\quad\quad\quad\quad\quad\quad\quad\quad}
+\renewcommand{\headrulewidth}{0bp} % 页眉线宽度
+
+
+%% \RequirePackage{titletoc}
+
+%% \titlecontents{chapter}[0pt]{\heiti\zihao{-4}}{\thecontentslabel\ }{}
+%%               {\hspace{.5em}\titlerule*[4pt]{$\cdot$}\contentspage}
+%%               \titlecontents{section}[2em]{\vspace{0.1\baselineskip}\songti\zihao{-4}}{\thecontentslabel\ }{}
+%%                             {\hspace{.5em}\titlerule*[4pt]{$\cdot$}\contentspage}
+%%                             \titlecontents{subsection}[4em]{\vspace{0.1\baselineskip}\songti\zihao{-4}}{\thecontentslabel\ }{}
+%% {\hspace{.5em}\titlerule*[4pt]{$\cdot$}\contentspage}
+
+
+\ctexset{
+  today = big,
+  punct = quanjiao, %% banjiao,
+  autoindent = 25pt
+}
+
+\renewcommand{\chaptermark}[1]{%
+	\markboth{#1}
+	{\noexpand\firstsectiontitle}}
+\renewcommand{\sectionmark}[1]{%
+	\markright{#1}\gdef\firstsectiontitle{#1}}
+%\renewcommand{\sectionmark}[1]{%
+%	\markright{#1}%
+%	\iffirstsectionmark
+%	\gdef\firstsectiontitle{#1}%
+%	\fi
+%	\global\firstsectionmarkfalse}
+%\newif\iffirstsectionmark
+\def\firstsectiontitle{}
+
+
+\title{\zihao{1}\textbf{微積溯源}}
+
+\author{\normalsize 華蘅芳}
+\date{\normalsize\today 版}
+
+
+\begin{document}
+%\maketitle
+%\tableofcontents
+
+\setcounter{chapter}{0}
+
+% indent
+
+\pagestyle{fancy}
+
+\CJKmove
+
+\large
+\include{Chapters/序}
+
+\include{Chapters/微积溯源卷一}
+
+\end{document}

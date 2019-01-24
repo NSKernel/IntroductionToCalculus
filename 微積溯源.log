@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840) (preloaded format=xelatex 2018.11.3)  24 JAN 2019 17:53
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840) (preloaded format=xelatex 2018.11.3)  24 JAN 2019 18:25
 entering extended mode
 **./微積溯源.tex
 (微積溯源.tex
@@ -1153,9 +1153,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-Overfull \hbox (2.25594pt too wide) in paragraph at lines 79--81
+Overfull \hbox (2.25594pt too wide) in paragraph at lines 79--85
 [][]$[] [] [] [] [] [] [] [] []$[][][][]$[] []$[] \OMS/cmsy/m/n/12.045 ? [][]$[
 ] [] [] [] [] []$[]$[] [] [] [] [] [][] 
+ []
+
+
+Overfull \hbox (4.33496pt too wide) in paragraph at lines 79--85
+[] \OMS/cmsy/m/n/12.045 ? [][][] ? [][] ? [][]$[] [] [] [] [] [] [] [] []$[][][
+][]$[] []$[][][] ? [][] ?
+ []
+
+
+Overfull \hbox (6.61581pt too wide) in paragraph at lines 79--85
+[] [] [] [] [] []$[] \OT1/cmr/m/n/12.045 = [][]$[] [] [] [] []$[] \OMS/cmsy/m/n
+/12.045 ? []$[] [] [] [] [] [] [] [] [] [] [] [] [] [] []$[][][] ?
+ []
+
+
+Overfull \hbox (0.72984pt too wide) in paragraph at lines 79--85
+[][][]$[] [] [] [] [] [] [] [] [] [] [] []$[][][]$ [] [] [] [] [][] [] [] [] []
+ [] [] [] [] [] [] []$[][] 
  []
 
 
@@ -1168,7 +1186,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]) [11] (微積溯源.aux (Chapters/序.aux) (Chapters/微積溯源卷一.aux))
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.05656pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12] (微積溯源.aux (Chapters/序.aux) (Chapters/微積溯源卷一.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1180,6 +1208,6 @@ Here is how much of TeX's memory you used:
  22721 multiletter control sequences out of 15000+200000
  537648 words of font info for 76 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 52i,11n,70p,1652b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 52i,11n,70p,1652b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 微積溯源.pdf (13 pages).
+Output written on 微積溯源.pdf (14 pages).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840) (preloaded format=xelatex 2018.11.3)  24 JAN 2019 18:25
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840) (preloaded format=xelatex 2018.11.3)  24 JAN 2019 22:43
 entering extended mode
 **./微積溯源.tex
 (微積溯源.tex
@@ -1171,9 +1171,9 @@ Overfull \hbox (6.61581pt too wide) in paragraph at lines 79--85
  []
 
 
-Overfull \hbox (0.72984pt too wide) in paragraph at lines 79--85
-[][][]$[] [] [] [] [] [] [] [] [] [] [] []$[][][]$ [] [] [] [] [][] [] [] [] []
- [] [] [] [] [] [] []$[][] 
+Overfull \hbox (8.36913pt too wide) in paragraph at lines 79--85
+[] [] [] [] [] [] [] [] [] []$[]$ [] [] [] [] [] [] [][] [] [] []$[] \OT1/cmr/m
+/n/12.045 = [][]$[] []$[] = [][][]$[]
  []
 
 
@@ -1189,14 +1189,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11])
+ [11]
+Overfull \hbox (51.05641pt too wide) in paragraph at lines 85--97
+[] [] [] [] [] [] [] [] [] [][] [] [] [] [] [] [] [] [] [][] [] []$[]$ [] [] []
+ [][] [] []$\OT1/cmr/m/n/12.045 [([] \OMS/cmsy/m/n/12.045 ? []\OT1/cmr/m/n/12.0
+45 )([][][][][])]$
+ []
+
+
+Underfull \vbox (badness 6792) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.05656pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12] (微積溯源.aux (Chapters/序.aux) (Chapters/微積溯源卷一.aux))
+[12]) [13] (微積溯源.aux (Chapters/序.aux) (Chapters/微積溯源卷一.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1210,4 +1220,4 @@ Here is how much of TeX's memory you used:
  0 hyphenation exceptions out of 8191
  52i,11n,70p,1652b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 微積溯源.pdf (14 pages).
+Output written on 微積溯源.pdf (15 pages).

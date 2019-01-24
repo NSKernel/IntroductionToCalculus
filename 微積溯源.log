@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840) (preloaded format=xelatex 2018.11.3)  23 JAN 2019 19:44
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840) (preloaded format=xelatex 2018.11.3)  24 JAN 2019 17:53
 entering extended mode
 **./微積溯源.tex
 (微積溯源.tex
@@ -884,7 +884,7 @@ s
 LaTeX Warning: Unused global option(s):
     [nofont].
 
-(微積溯源.aux (Chapters/序.aux) (Chapters/微积溯源卷一.aux))
+(微積溯源.aux (Chapters/序.aux) (Chapters/微積溯源卷一.aux))
 \openout1 = `微積溯源.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
@@ -1019,9 +1019,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-\openout2 = `Chapters/微积溯源卷一.aux'.
+\openout2 = `Chapters/微積溯源卷一.aux'.
 
- (Chapters/微积溯源卷一.tex
+ (Chapters/微積溯源卷一.tex
 第二章
 [1
 
@@ -1153,7 +1153,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-Overfull \hbox (2.25594pt too wide) in paragraph at lines 79--80
+Overfull \hbox (2.25594pt too wide) in paragraph at lines 79--81
 [][]$[] [] [] [] [] [] [] [] []$[][][][]$[] []$[] \OMS/cmsy/m/n/12.045 ? [][]$[
 ] [] [] [] [] []$[]$[] [] [] [] [] [][] 
  []
@@ -1168,7 +1168,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]) [11] (微積溯源.aux (Chapters/序.aux) (Chapters/微积溯源卷一.aux))
+[10]) [11] (微積溯源.aux (Chapters/序.aux) (Chapters/微積溯源卷一.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1180,6 +1180,6 @@ Here is how much of TeX's memory you used:
  22721 multiletter control sequences out of 15000+200000
  537648 words of font info for 76 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 52i,11n,70p,1652b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 52i,11n,70p,1652b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on 微積溯源.pdf (13 pages).

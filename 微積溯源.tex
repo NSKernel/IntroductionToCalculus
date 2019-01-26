@@ -8,8 +8,6 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{graphicx,stackengine,scalerel}
-\def\tang{\ThisStyle{\abovebaseline[0pt]{\scalebox{-1}{$\SavedStyle\perp$}}}}
 \usepackage{amsthm}
 \usepackage{ulem}
 \usepackage{indentfirst}
@@ -49,6 +47,10 @@
 }
 \makeatother
 \newcommand\ytza[1]{\shifttext{-3.5pt}{\ytzfz #1}}
+
+% symbols
+\DeclareMathSymbol{\MinusSign}{\mathbin}{symbols}{"3E}
+\DeclareMathSymbol{\PlusSign}{\mathbin}{symbols}{"3F}
 
 % underline
 %\renewcommand{\ULdepth}{7pt}

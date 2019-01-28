@@ -1,7 +1,7 @@
 %!TEX program = xelatex
 %!TEX encoding = UTF-8
 
-\documentclass[UTF8, nofont, landscape, a5paper]{ctexbook}
+\documentclass[UTF8, fontset=none, landscape, a5paper]{ctexbook}
 
 \usepackage{ctex}
 \usepackage{xeCJK}
@@ -38,15 +38,6 @@
   }
 }
 
-% font
-%\defaultCJKfontfeatures{RawFeature={vertical:+vert}}
-\makeatletter
-\newcommand*{\shifttext}[2]{
-  \settowidth{\@tempdima}{#2}
-  \makebox[\@tempdima]{\hspace*{#1}#2}
-}
-\makeatother
-
 % symbols
 \DeclareMathSymbol{\MinusSign}{\mathbin}{symbols}{"3E}
 \DeclareMathSymbol{\PlusSign}{\mathbin}{symbols}{"3F}
@@ -63,6 +54,7 @@
 
 
 %% font settings
+% \defaultCJKfontfeatures{RawFeature={vertical:+vert}}
 \setCJKmainfont[RawFeature={vertical;+vert},BoldFont=SourceHanSerifK-Bold.otf,ItalicFont=FZKai-Z03.TTF]{SourceHanSerifK-Medium.otf}
 \newCJKfontfamily{\equa}{FZKai-Z03.TTF}
 \setCJKsansfont{FZKai-Z03}

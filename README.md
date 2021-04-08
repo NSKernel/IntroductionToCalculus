@@ -30,6 +30,16 @@ We welcome anyone to contribute. If you have a good patch or idea, just bring up
 
 *Contributors*: NSKernel (founder, maintainer), [SiobaraIsara](https://github.com/SiobaraIsara) (optimized the source code)
 
+## 參考版PDF的字體選用
+
+本項目儘量選用開源的字體，並且希望能採用舊字形的字體以確保閱讀準確美觀，因此正文採用了ButTaiwan的[源流明朝](https://github.com/ButTaiwan/genryu-font)。此字體基於韓文版的思源宋體，基本符合舊字形標準且通過圓滑邊角和調瘦字框使得其非常適合排印本項目。然而由於此字體主要還是爲台灣地區的情況考慮而設計修改，因此如果它的修改超過了舊字形的限度則我可能考慮fork一份過來保證穩定性。
+
+This project uses opensource fonts at any possible place and aims to produce accurate and beautiful PDF using traditional font style. Thus, I chose the [Genryu-Mincho](https://github.com/ButTaiwan/genryu-font) in the text. The font is based on the Korean version of Source Han Serif and is basically compliant to the traditional font style. The font has smooth edges with a thinner design making it very suitable to typeset this project. However the font is intended to serve the Taiwan region and has modified to do so. So if the modifications are over what a *traditional font style* can be called then I might fork that repo to keep the stability of the produced PDF.
+
+關於正文中公式的字體，由於尚未發現高質量穩定的开源楷体，因此采用了方正公司的方正楷体。此字體可免費商用，因此毋須擔心版權問題。如您仍希望使用開源字體，可自行替換編譯。
+
+For the font in equations, I currently have no knowledge on a high-quality opensource Kai-style font so my choice is the FZKai from FounderType. The font is free and commercial-usage-allowed so there's no concern on copyright or anything. If you still insist on using an opensource alternative, you may replace it and recompile.
+
 ## 目前進度/Progress
 
 文字上：目前已經排好了序，正文第一章進行了一半。

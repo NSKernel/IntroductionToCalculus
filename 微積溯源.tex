@@ -130,6 +130,20 @@
 %\newif\iffirstsectionmark
 \def\firstsectiontitle{}
 
+\makeatletter
+\newcommand*{\inleq}[1]{%
+	\begingroup
+	\CJKmoveback
+	\equa{
+	\ensuremath{%
+		% \displaystyle % larger fractions, ...
+		#1%
+	}%
+	}
+	\CJKmove
+	\endgroup
+}
+\makeatother
 
 \title{\zihao{1}\textbf{微積溯源}}
 

@@ -56,7 +56,7 @@
 
 %% font settings
 % \defaultCJKfontfeatures{RawFeature={vertical:+vert}}
-\setCJKmainfont[RawFeature={vertical;+vert},BoldFont=GenRyuMinTW-Bold.ttf,ItalicFont=FZKai-Z03.TTF]{GenRyuMinTW-Medium.ttf}
+\setCJKmainfont[RawFeature={vertical;+vert},BoldFont=GenRyuMinTW-Bold.ttf,ItalicFont=FZKai-Z03.TTF]{GenRyuMinTW-Medium.ttf}%{DNPShueiOldStyleMinPr6N-M.otf}
 \newCJKfontfamily{\equa}{FZKai-Z03.TTF}
 \setCJKsansfont{FZKai-Z03}
 \setCJKmonofont{FZKai-Z03}
@@ -88,7 +88,7 @@
 % titles
 \titleformat{\chapter}{}{}{0pt}{\raggedright\bfseries\LARGE\ziju{0.4}}
 \titlespacing*{\chapter}{10pt}{0pt}{5pt}
-\titleformat{\section}{}{}{0pt}{\raggedright\bfseries\Large\ziju{0.4}\hspace*{23pt}}
+\titleformat{\section}{\vspace{\dimexpr -8pt+10pt}\vspace*{\dimexpr 8pt-10pt}}{}{0pt}{\raggedright\bfseries\Large\ziju{0.4}\hspace*{23pt}}
 \titlespacing*{\section}{0pt}{13pt}{13pt}
 
 % headers

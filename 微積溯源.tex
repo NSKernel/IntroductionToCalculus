@@ -14,6 +14,7 @@
 \usepackage{enumerate}
 \usepackage{enumitem}
 \usepackage{titlesec}
+\usepackage{graphicx}
 
 
 % Chinese numbering
@@ -86,9 +87,9 @@
 
 % titles
 \titleformat{\chapter}{}{}{0pt}{\raggedright\bfseries\LARGE\ziju{0.4}}
-\titlespacing*{\chapter}{10pt}{0pt}{10pt}
+\titlespacing*{\chapter}{10pt}{0pt}{5pt}
 \titleformat{\section}{}{}{0pt}{\raggedright\bfseries\Large\ziju{0.4}\hspace*{23pt}}
-\titlespacing*{\section}{0pt}{8pt}{18pt}
+\titlespacing*{\section}{0pt}{13pt}{13pt}
 
 % headers
 \pagestyle{fancy}
@@ -115,6 +116,8 @@
   punct = quanjiao, %% banjiao,
   autoindent = 25pt
 }
+
+\newcommand{\chint}{\hbox{\lower.75ex\hbox{\scalebox{0.7}[2]{\textit{禾}}}}}
 
 \renewcommand{\chaptermark}[1]{%
 	\markboth{#1}

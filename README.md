@@ -6,7 +6,7 @@ This project aims to provided a beautifully-typed and well-edited version of the
 
 ## 關於微積溯源/About the book Introduction to Calculus
 
-微積溯源乃清代洋務運動之時傅蘭雅、華蘅芳所譯之微積分教科書。這本書由於開創性地翻譯了許多現今數學之專有名詞（如“函數”等），因此有將其整理出的價值。
+微積溯源乃清代洋務運動之時傅蘭雅、華蘅芳所譯之微積分教科書。這本書由於開創性地翻譯了許多現今數學之專有名詞，因此有將其整理出的價值。
 
 Introduction to Calculus was a calculus textbook translated by John Fryer and Hua Hengfang during the [Self-Strengthening Movement](https://en.wikipedia.org/wiki/Self-Strengthening_Movement). This book is the origin of many math jargons in modern Chinese thus we believe it is worthy to be digitized.
 
